@@ -1,0 +1,34 @@
+{
+  "name": "demo-swagger-autogen",
+  "version": "1.0.0",
+  "description": "Example showing the use of the swagger-autogen module",
+  "main": "index.js",
+  "readmeFilename": "README.md",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalrastogi13/demo-swagger-autogen.git"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "autogen",
+    "demo"
+  ],
+  "author": "sharechat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalrastogi13/demo-swagger-autogen/issues"
+  },
+  "homepage": "https://github.com/vishalrastogi13/demo-swagger-autogen#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "start-gendoc": "node swagger.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-autogen": "^2.21.0",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
