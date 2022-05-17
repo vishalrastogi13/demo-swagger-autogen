@@ -19,9 +19,13 @@ Run the project and access the documentation at:
 [http://localhost:3000/doc](http://localhost:3000/doc)
 
 
-To generate the api specification in version 2, omit the openapi version 3 provided while importing the swagger-autogen module
+## Guidelines
+1. An open api skeleton code is to be provided in swagger.js file which contains the metadata for the apis, server and host information, definitions of models, and many such things.
+2. Every route or api that needs to be documented must be annotated with #swagger.<something> tag which gives the information to autogen module about the request type, request object, response body etc.
+3. To generate the api specification in version 2, omit the openapi version 3 provided while importing the swagger-autogen module
+4. swagger-ui-express module is used to read the generated specification (swagger-output.json) and render it in UI for the ease of use.
 
-##Screenshots
+## Screenshots
 
 ![Screenshot 2022-05-17 at 4 06 34 PM](https://user-images.githubusercontent.com/95530856/168792807-dd71a6ff-9501-4bbd-b1ff-af8beb812fe5.png)
 ![Screenshot 2022-05-17 at 4 06 51 PM](https://user-images.githubusercontent.com/95530856/168792816-760bb5cb-22d5-4706-bc4a-73a3ef0d64e7.png)
